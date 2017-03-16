@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<link href="stylesheet.css" rel="stylesheet">
+<script src="jquery.js"></script>
+<script>
+function reg(){
+	var name=document.getElementById('name').value;
+	var mail=document.getElementById('email').value;
+    var phone=document.getElementById('phone').value;
+    var password=document.getElementById('password').value;
+    var repassword=document.getElementById('repassword').value;
+
+    if (name.length==0) {alert("please enter your full name");}
+    else if (mail.length==0) {alert("please enter your email");}
+    else if (phone.length==0) {alert("please enter your phone number");}
+    else if (password.length<6) {alert("weak password ,continue?");}
+    else if (repassword!=password) {alert("passwords don't match, please re-type your password");}
+    return false;
+}
+
+function login()
+{var email= document.getElementById('email').value;
+var password = document.getElementById('ps').value;
+
+if (email.length==0) {alert("please enter your email");}
+else if (password.length<6) {alert("please enter your password");}
+else if (password.length>6) {alert("Remember your password?")}
+
+$(document).ready(function(){
+	$('#sign').click(function(){
+		$('#log').hide();
+		$('#reg').hide();
+		$('#container').show();
+		});
+
+	});
+
+return false;
+}
+
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$paernt = $('#box').width();
+$child  = $('#box ul li div').width();
+$childList =$('#box ul');
+
+$dif = $childList.width() - $paernt;
+$left=0;
+
+
+$('#pre').click(function(){
+if($left >0 ){
+	$left -= $child;
+	$childList.animate({'marginLeft': -1*$left});
+	$active -= $child;
+}
+});
+ 
+
+$('#next').click( function(){
+
+if($left <$dif){
+	$left += $child;
+	$childList.animate({'marginLeft': -1*$left });
+
+}
+});
+
+});
+</script>>
+
+</head>
+
+<title >wild safari </title>
+
+<style >	
+@font-face
+{
+font-family: miley;
+src: url('MileyCyrusFONT.otf');
+}
+</style>
+
+<body>
+<div id = "container">
+
+<div class="ptbc1">
+<div class="ptbc2">
+<div class="ptl">
+<img id="image" src="logo.png">
+<div class='pt'>
+<h1 ><sup><i>WILD SAFARI</i></sup> <sub><span>your guide to magnificent descoveries</span></sub></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu">
+<ul>
+<li>  <a href="#"> HOME </a>  </li>
+<li>  <a href="#"> START HERE </a> </li>
+<li>  <a href="#"> WILD ADVENTURES </a>  </li>
+<li>  <a href="#"> FAMILY FUN </a>  </li>
+<li>  <a href="#"> GALLERY </a>  </li>
+<li>  <a href="#"> CONTACT US </a>  </li>
+</ul>
+</div><br>
+
+
+<div class='accessing'>
+<ul>
+<li> Already member? <a href="#"> log in </a> </li> 
+<li> Not a member? <a href="#"> Free registration </a> </li> 
+</ul>
+</div>
+
+<div id="vw">
+
+ Book Your Ticket To Have Some Fun
+<div class="video">
+<iframe src="https://www.youtube.com/embed/t-vxanB58SQ?feature=player_detailpage" width="400px"; height="400px" style="border:0px;"></iframe>
+</div>
+</div>
+
+<div id="boxslider">
+Enjoy visiting some of these places
+<ul>
+
+<div id='box'>
+<ul>
+    <li>
+		<div id="ss">
+			<img src="victfalls1.jpg" >
+			<h2><a href="#">victoria falls</a></h2>
+		</div>
+	</li>
+
+
+
+	<li>
+		<div id="ss">
+			<img src="victfalls.jpg" >
+			<h2><a href="#">victoria falls</a></h2>
+		</div>
+	</li>
+
+
+	<li>
+		<div id="ss">
+			<img src="elepahantcampthailand.jpg" >
+			<h2><a href="#">elephant camp in thailand</a></h2>
+		</div>
+	</li>
+
+	<li>
+		<div id="ss">
+			<img src="elepahantcampvictoriafalls.jpg" >
+			<h2><a href="#">elepant camp in victoria falls</a></h2>
+		</div>
+	</li>
+
+	<li>
+		<div id="ss">
+			<img src="bungee.jpg" >
+			<h2><a href="#">bungee</a></h2>
+		</div>
+	</li>
+
+	<li>
+		<div id="ss">
+			<img src="ziplinecancun.jpg" >
+			<h2><a href="#">zip lining in cancun</a></h2>
+		</div>
+	</li>
+
+	<li>
+		<div id="ss">
+			<img src="raftinginbali.jpg" >
+			<h2><a href="#">whit water rafting in bali</a></h2>
+		</div>
+	</li>
+
+	<li>
+		<div id="ss">
+			<img src="vallartaadve.jpg" >
+			<h2><a href="#">vallart adventures</a></h2>
+		</div>
+	</li>
+
+</ul>
+</div>
+
+<div id="slider" >
+<ul>
+<button id='pre'>PREViOUS</button>
+<button id='next'>NEXT</button>
+</ul>
+</div>
+
+</ul>
+</div>
+
+<div class="aboutus" >
+<ul>
+	<li><a href="#"><img src="likeus.png" style=" width:40px; height:40px; opacity:0.5;" > </a></li>
+	<li><a href="#"><img src="facebook.jpg" style=" width:40px; height:40px; opacity:0.5;"></a></li>
+	<li><a href="#"><img src="twitter.png" style=" width:40px; height:40px; opacity:0.5;"></a></li>
+	<li><a href="#"><img src="instlogo.png"  style=" width:40px; height:40px;opacity:0.5;"> </a> </li>
+	<li><a href="#"><img src="Youtube.png" style=" width:40px; height:40px;opacity:0.5;"></a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="reg">
+<h1>FREE REGISTRATION</h1><br>
+    <form onsubmit="return reg()">
+     <li> Full name <input id="name" type='text' placeholder='Full name'> </li> <br>  
+     <li> E-mail Address<input id="email" type='text' placeholder='Email address'></li><br>
+     <li> Phone number  <input id="phone" type='text' placeholder='Phone number'></li><br>
+     <li> Country <input type="text" placeholder='Country'></li> <br>
+     <li> City <input type="text" placeholder='city'></li><br>
+     <li> Password <input id="password" type="text" placeholder='password'></li><br>
+     <li> Retype password  <input id="repassword" type="text" placeholder='retype password'></li><br>
+    <button id="sub"> submit </button>
+    </form>
+</div>
+
+<div id="log">
+<h1>sign in</h1>
+<form onsubmit="return login()">
+	<li>E-mail <input id="email" type='text' placeholder='email address'></li><br>
+	<li>password <input id="pw" type='text' placeholder='password'></li><br>
+	<button id="sign"> log in </button>
+</form>
+
+</div>
+
+</body>
+
+</html>
